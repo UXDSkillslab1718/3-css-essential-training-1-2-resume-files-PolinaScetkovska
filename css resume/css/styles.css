@@ -1,3 +1,45 @@
 body { 
-background: lightblue;
+background: white;
+    
+}
+a{
+    color: #B22222;
+}
+a:hover{
+    text-decoration: none;
+}
+h2 {color: cornflowerblue;
+}
+
+.keep {
+    color: coral;
+}
+
+a{
+    background: purple;
+    padding: 6px; 
+}
+
+a:link {
+    background: grey; 
+}
+
+a:visited{
+    background: red; 
+}
+
+header, footer{
+    background: #696969;
+    color: #A9A9A9;
+}
+header h1, header h2 {
+    color:white;
+}
+
+.education {
+    background: #A9A9A9;
+}
+
+.work {
+    background: #C0C0C0;
 }
