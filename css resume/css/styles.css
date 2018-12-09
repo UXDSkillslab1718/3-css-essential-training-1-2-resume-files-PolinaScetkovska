@@ -1,17 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body { 
     font-family: 'Raleway', sans-serif;
-background: white;
+    margin: 0;
     
 }
 h1, h2 {
     font-family: 'Pacifico', cursive;
+    font-weight: 300;
 }
 
 h1 {
     font-size: 60px;
 }
 h2 {
-    font-size: 40px;
+    font-size: 35px;
+    margin-top: 0;
 }
 
 a{
@@ -20,38 +29,70 @@ a{
 a:hover{
     text-decoration: none;
 }
-h2 {color: cornflowerblue;
+.content-wrap{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+
+}
+.col-narrow{
+    width: 30%;
+    float: left;
+ 
+   
+    min-height: 50px;
+}
+.col-wide{
+    width: 100%;
+    padding-left: 250px;
+   
+    min-height: 50px;
+}
+
+
+
+
+
+h2 {color: white;
 }
 
 .keep {
-    color: coral;
+    color: #DCDCDC;
 }
 
-a{
-    background: purple;
-    padding: 6px; 
-}
-
-a:link {
-    background: grey; 
-}
-
-a:visited{
-    background: red; 
-}
+/* Header and Footer*/
 
 header, footer{
-    background: #696969;
-    color: #A9A9A9;
+        background: #696969;
+        color: #A9A9A9;
+        text-align: center;
+}
+
+.contact-info a{
+   
+    margin: 20px;
+   display: inline-block;
+
+}
+.profile-img {
+   
+    border-radius: 50%;
+
+}
+header{
+    text-align: center;
 }
 header h1, header h2 {
     color:white;
+    margin: 0;
 }
-
+/* Education */
 .education {
     background: #A9A9A9;
 }
 
+/* Work Experience*/
 .work {
     background: #C0C0C0;
 }
