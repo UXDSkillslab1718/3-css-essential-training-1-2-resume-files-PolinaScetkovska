@@ -22,6 +22,9 @@ h2 {
     font-size: 35px;
     margin-top: 0;
 }
+h3 {
+    margin: 0;
+}
 
 a{
     color: #B22222;
@@ -46,8 +49,11 @@ a:hover{
 .col-wide{
     width: 100%;
     padding-left: 250px;
-   
     min-height: 50px;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 
@@ -92,7 +98,20 @@ header h1, header h2 {
     background: #A9A9A9;
 }
 
+p + h3 {
+    margin-top: 25px;
+}
+
 /* Work Experience*/
 .work {
     background: #C0C0C0;
 }
+h3 ~p{
+    margin: 0; 
+}
+
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+
+
