@@ -10,6 +10,14 @@ body {
     margin: 0;
     
 }
+
+.profile-img {
+    width: 30%;
+    float: left;  
+    min-height: 50px;
+    border-radius: 50%;
+}
+    
 h1, h2 {
     font-family: 'Pacifico', cursive;
     font-weight: 300;
@@ -18,9 +26,11 @@ h1, h2 {
 h1 {
     font-size: 60px;
 }
+
 h2 {
     font-size: 35px;
     margin-top: 0;
+    color: white;
 }
 h3 {
     margin: 0;
@@ -37,7 +47,6 @@ a:hover{
     margin: 0 auto;
     padding: 50px 70px;
     overflow: hidden;
-
 }
 .col-narrow{
     width: 30%;
@@ -62,9 +71,8 @@ a:hover{
     display: inline-block;
 }
 
-
-
-h2 {color: white;
+h1 {
+    color: white;
 }
 
 .keep {
@@ -104,11 +112,7 @@ nav a{
     font-weight: 1000;
     color: #D8BFD8;
 }
-.profile-img {
-   
-    border-radius: 50%;
 
-}
 header{
     text-align: center;
     padding-top: 90px;
@@ -131,8 +135,6 @@ header h1, header h2 {
         rgba(255,255,255,0.5)),
         url(../images/watercolor.jpg) no-repeat fixed;
     background-size: cover;
-        
-        
 }
 
 p + h3 {
@@ -151,4 +153,30 @@ h3 ~p{
     margin-top: 0;
 }
 
+/* Media Queries */
 
+@media (min-width:800px)
+{
+.col-narrow{
+    width: 30%;
+    float: left;  
+    min-height: 50px;
+}
+.col-wide{
+    width: 100%;
+    padding-left: 250px;
+    min-height: 50px;
+}
+
+}
+
+
+@media (max-width:799px){
+    header{
+        text-align: center;
+    }
+    .profile-img{
+        width: 200px;
+        align-content: center;
+    }
+}
